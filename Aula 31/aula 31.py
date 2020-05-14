@@ -72,3 +72,33 @@ l1 = list(l1)  # transformando de set para lista
 print(l1)
 print(l1[-1])
 print ('---')
+
+# utilizando union, intersection, difference e symmetric_difference
+ss1 = {1,2,3,4,5}
+ss2 = {1,2,3,4,5,6}
+
+#união
+ss3 = ss1 | ss2
+print(ss3)
+
+#interseção
+ss3 = ss1 & ss2
+print(ss3)
+
+# diferença (o maior set menos o menor set)
+ss3 = ss2 - ss1
+print(ss3)  # apresentará somente o 6
+
+ss1 = {1,2,3,4,5,7}
+ss2 = {1,2,3,4,5,6}
+ss3 = ss2 - ss1  # apresentará somente o 6 novamente
+print(ss3)
+
+ss1 = {1,2,3,4,5,7}
+ss2 = {1,2,3,4,5,6}
+ss3 = ss1 - ss2  # apresentará somente o 7
+print(ss3)
+
+# diferença simétrica(o maior set menos o menor set)
+ss3 = ss2 ^ ss1
+print(ss3)
