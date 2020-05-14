@@ -102,3 +102,20 @@ print(ss3)
 # diferença simétrica(o maior set menos o menor set)
 ss3 = ss2 ^ ss1
 print(ss3)
+print('---')
+
+# checando booleanamente
+l1 = ['eiji', 'ananda', 'duda', 'nina', 'junior']
+l2 = ['junior', 'duda', 'duda', 'nina', 'ananda', 'eiji', 'eiji', 'eiji', 'eiji', 'eiji', 'eiji']
+
+l1 = set(l1)
+l2 = set(l2)
+print(l1 != l2)
+
+l1 = ['eiji', 'ananda', 'duda', 'nina', 'junior']
+l2 = ['junior', 'duda', 'duda', 'nina', 'ananda', 'eiji', 'eiji', 'eiji', 'eiji', 'eiji', 'eiji']
+l1 = list(set(l1))
+l2 = list(set(l2))
+print(l1 == l2)
+print(l1,l2)
+print('---')
